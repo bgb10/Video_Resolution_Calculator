@@ -99,7 +99,7 @@ int main()
 		y_zoom = 0.2;
 
 		printf("Zoom값을 X: %lf, Y: %lf 로 설정하세요. \n", x_zoom, y_zoom);
-		printf("Position값을 X: %d, Y: %d 로 설정하세요. \n", -768 + 384 * (coordinate_x - 1), 432 - 216 * (coordinate_y - 1));
+		printf("Position값을 X: %d, Y: %d 로 설정하세요. \n", -((x_timeline_size / 2) - (x_timeline_size / 10)) + (x_timeline_size / 5) * (coordinate_x - 1), ((y_timeline_size / 2) - (y_timeline_size / 10)) - (y_timeline_size / 5) * (coordinate_y - 1));
 
 		system("pause");
 		system("cls");
